@@ -34,7 +34,7 @@ function displayMovieList(movies) {
         let movieListItem = document.createElement('div');
         movieListItem.dataset.id = movie.imdbID;
         movieListItem.classList.add('search-list-item');
-        let moviePoster = movie.Poster !== "N/A" ? movie.Poster : "image_not_found.png";
+        let moviePoster = movie.Poster !== "N/A" ? movie.Poster : "no-image-svgrepo-com.svg";
 
         movieListItem.innerHTML = `
             <div class="search-item-thumbnail">
@@ -66,7 +66,7 @@ function loadMovieDetails() {
 function displayMovieDetails(details) {
     resultGrid.innerHTML = `
         <div class="movie-poster">
-            <img src="${details.Poster !== "N/A" ? details.Poster : "image_not_found.png"}" alt="movie poster">
+            <img src="${details.Poster !== "N/A" ? details.Poster : "no-image-svgrepo-com.svg"}" alt="movie poster">
         </div>
         <div class="movie-info">
             <h3 class="movie-title">${details.Title}</h3>
