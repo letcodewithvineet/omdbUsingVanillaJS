@@ -32,7 +32,7 @@ img{
     padding: 0 1rem;
 }
 .search-container{
-    background-color: var(--md-dark-color);
+    background-color: #000;
     height: 180px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -46,7 +46,7 @@ img{
 }
 .logo{
     padding: 1rem 0;
-    border-bottom: 1px solid var(--light-dark-color);
+    border-bottom: 1px #000;
 }
 .logo p{
     font-size: 2rem;
@@ -55,6 +55,59 @@ img{
 }
 .logo p span{
     color: var(--yellow-color);
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0.1rem;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 1rem;
+    align-items: center;
+}
+
+#menuIcon {
+    cursor: pointer;
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.show-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h4 {
+    color: #fff;
+    align-self: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-size: 1.6vw; /* Use vw units for responsive font size */
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 0.2rem;
 }
 .search-element{
     display: -webkit-box;
@@ -74,7 +127,7 @@ img{
 }
 .search-element h3{
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     margin-right: 1rem;
     font-size: 2rem;
     color: #fff;
@@ -293,4 +346,16 @@ img{
         padding-left: 0;
         margin-left: 0;
     }
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    
 }

@@ -4,6 +4,11 @@ const OMDB_API_URL = 'https://omdbapi.com/';
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the footer year
+document.getElementById('year').textContent = currentYear;
 
 async function loadMovies(searchTerm) {
     const URL = `${OMDB_API_URL}?s=${searchTerm}&page=1&apikey=${OMDB_API_KEY}`;
